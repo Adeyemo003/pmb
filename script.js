@@ -76,7 +76,6 @@ navToggle.addEventListener("click", function(){
 })
 
 // on scroll function
-
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {

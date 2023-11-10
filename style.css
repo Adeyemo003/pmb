@@ -371,11 +371,11 @@ h2{
 }
 
 .img-cont{
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 .img-cont img{
@@ -555,6 +555,7 @@ h2{
   width: max-content;
 }
 
+
 .rights{
     grid-column-start: 1;
     grid-column-end: -1;
@@ -609,6 +610,18 @@ footer{
 
 h4{
 	color: rgb(255, 255, 255);
+}
+
+.more-info{
+  color: #bdb8b8;
+  display: flex;	
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
+
+.more-info p{
+  margin: 0;
 }
 
 .cover {
