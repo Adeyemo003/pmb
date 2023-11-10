@@ -413,8 +413,8 @@ footer{
 
 .footer{
   display: grid;	
-    color: rgb(202 199 199);
-  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(202 199 199);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 2rem;
 }
 
