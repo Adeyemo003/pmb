@@ -253,147 +253,141 @@ h1{
   overflow: hidden;
 }
 
-.box:nth-child(1){
+.box-cont{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+}
+
+.box1{
   background: url(assets/images\ \(2\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(2){
+.box2{
   background: url(assets/Internal\ Auditing.\ 2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(3){
+.box3{
   background: url(assets/Surface\ and\ underwater\ inspection.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(4){
+.box4{
   background: url(assets/Advisory\ services.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(5){
+.box5{
   background: url(assets/Naval\ studies.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(6){
+.box6{
   background: url(assets/Expert\ witness\ 2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(7){
+.box7{
   background: url(assets/Advisory\ services\ 2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(8){
+.box8{
   background: url(assets/download\ \(4\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.box:nth-child(1):hover,
-.box:nth-child(1):active{
+.box1:hover,
+.box1:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/images\ \(2\).jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(2):hover,
-.box:nth-child(2):active{
+.box2:hover,
+.box2:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Internal\ Auditing.\ 2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(3):hover,
-.box:nth-child(3):active{
+.box3:hover,
+.box3:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Surface\ and\ underwater\ inspection.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(4):hover,
-.box:nth-child(4):active{
+.box4:hover,
+.box4:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Advisory\ services.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(5):hover,
-.box:nth-child(5):active{
+.box5:hover,
+.box5:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Naval\ studies.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(6):hover,
-.box:nth-child(6):active{
+.box6:hover,
+.box6:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Expert\ witness\ 2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(7):hover,
-.box:nth-child(7):active{
+.box7:hover,
+.box7:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/Advisory\ services\ 2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:nth-child(8):hover,
-.box:nth-child(8):active{
+.box8:hover,
+.box8:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.164)), url(assets/download\ \(4\).jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box:hover h2{
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
-}
-
 h2{
   font-size: 1rem;
-  color: white;
+  color: #023562;
   font-weight: bold;
-  position: absolute;
   margin: 0;
   width: max-content;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
+  align-self: center;
+  justify-self: center;
 }
 
 .service-no{
@@ -403,6 +397,7 @@ h2{
   font-weight: 600;
   padding: 1rem;
   width: max-content;
+  z-index: 100;
 }
 
 .service-no::after{
@@ -415,8 +410,8 @@ h2{
   height: 11rem;
   left: 50%;
   top: -50%;
-  transform: translate(-50%,-50%) rotate(325deg);
   z-index: -1;
+  transform: translate(-50%,-50%) rotate(325deg);
   box-shadow:
   0px 1.4px 2.1px -19px rgba(0, 0, 0, 0.466),
   0px 3.3px 12.7px -19px rgba(0, 0, 0, 0.616),
