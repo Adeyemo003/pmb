@@ -666,7 +666,7 @@ h4{
 
   .contact{
     grid-template-columns: 1fr 1fr;
-    gap: 0rem;
+    column-gap: 1rem;
     justify-content: center;
     grid-template-rows: max-content 1fr;
   }
@@ -773,5 +773,37 @@ h4{
 
   .mgt-profile div{
       font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1{
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .contact{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .ctbox{
+    gap: 0.3rem;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+  }
+
+  .icon{
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .icon1{
+    width: 1rem;
+    height: 1rem;
   }
 }
